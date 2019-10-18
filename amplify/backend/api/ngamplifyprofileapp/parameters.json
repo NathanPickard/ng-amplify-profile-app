@@ -1,0 +1,11 @@
+{
+    "AppSyncApiName": "ngamplifyprofileapp",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": "false",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authngamplifyprofileapp9a7ada89",
+            "Outputs.UserPoolId"
+        ]
+    }
+}

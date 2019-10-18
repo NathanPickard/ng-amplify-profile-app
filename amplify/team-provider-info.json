@@ -1,0 +1,19 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "ngamplifyprofileapp-dev-20191017204222-authRole",
+            "UnauthRoleArn": "arn:aws:iam::854875202353:role/ngamplifyprofileapp-dev-20191017204222-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::854875202353:role/ngamplifyprofileapp-dev-20191017204222-authRole",
+            "Region": "us-west-2",
+            "DeploymentBucketName": "ngamplifyprofileapp-dev-20191017204222-deployment",
+            "UnauthRoleName": "ngamplifyprofileapp-dev-20191017204222-unauthRole",
+            "StackName": "ngamplifyprofileapp-dev-20191017204222",
+            "StackId": "arn:aws:cloudformation:us-west-2:854875202353:stack/ngamplifyprofileapp-dev-20191017204222/4b0c2020-f159-11e9-bb80-02e60452d3a4"
+        },
+        "categories": {
+            "auth": {
+                "ngamplifyprofileapp9a7ada89": {}
+            }
+        }
+    }
+}
