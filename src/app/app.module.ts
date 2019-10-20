@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { AuthComponent } from './auth/auth.component';
 import { ProfileComponent } from './profile/profile.component';
 
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +19,8 @@ import { ProfileComponent } from './profile/profile.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AmplifyAngularModule
+    AmplifyAngularModule,
+    MDBBootstrapModule.forRoot()
   ],
   providers: [AmplifyService],
   bootstrap: [AppComponent]
