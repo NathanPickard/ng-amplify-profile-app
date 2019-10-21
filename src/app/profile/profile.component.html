@@ -23,6 +23,18 @@
 <main class="text-center my-5">
   <div class="container">
     <h2>My Profile</h2>
+    <div class="form-group row">
+      <div class="col-sm-12">
+        <div class="md-form mt-0">
+          <mdb-icon *ngIf="showPhoto" fas icon="upload" (click)="editPhoto()" size="2x" class="upload-icon"></mdb-icon>
+          <amplify-s3-image [path]="user.imageUrl" [options]="{'level': 'private'}" *ngIf="showPhoto">
+          </amplify-s3-image>
+          <amplify-photo-picker *ngIf="!showPhoto" path="image" [storageOptions]="{'level': 'private'}"
+            (uploaded)="onImageUploaded($event)">
+          </amplify-photo-picker>
+        </div>
+      </div>
+    </div>
     <form>
       <div class="form-group row">
         <label for="firstName" class="col-sm-2 col-form-label">First Name</label>
