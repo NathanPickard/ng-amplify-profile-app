@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AmplifyAngularModule, AmplifyService } from 'aws-amplify-angular';
 
@@ -20,6 +21,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     BrowserModule,
     AppRoutingModule,
     AmplifyAngularModule,
+    FormsModule,
     MDBBootstrapModule.forRoot()
   ],
   providers: [AmplifyService],
